@@ -1,0 +1,191 @@
+*{
+ padding:0;
+ margin: 0;
+ box-sizing: content-box;
+ font-family: 'Source Sans Pro', sans-serif;
+ font-weight: 300;
+}
+#logo{
+ display: flex;
+ padding-top: 5px;
+ padding-left: 5px;
+ justify-content: flex-start;
+ max-width: 5px;
+}
+ul{
+ display: flex;
+ padding: 20px;
+ margin-top: 5px;
+ justify-content: center;
+ align-items: space-between;
+ list-style: none;
+ font-style: italic;
+ font-size: 100%;
+}
+
+li a:hover{
+color:rgba(229, 224, 149, 0.877);
+text-decoration: underline;
+}
+
+a{
+ text-decoration: none;
+ padding: 5px ;
+ margin-top: 10px;
+ font-family: 'Source Serif Pro', sans-serif, italic ;
+ color: rgba(230, 218, 64, 0.877)
+}
+
+body{
+ margin: 0 auto;
+ align-items: center;
+ text-align: center;
+ background-image: url(https://images.pexels.com/photos/2779948/pexels-photo-2779948.jpeg);
+ background-repeat: no-repeat;
+ background-size:cover ;
+ max-width: 100%;
+ ;
+}
+
+h1{
+ display: contents;
+ font-family: 'Cedarville Cursive', cursive;
+ font-size: 400%;
+ font-weight: 200;
+ text-align: center;
+ margin-top: 2%;
+ color: rgb(230, 218, 64, 0.877)
+}
+
+h5{
+ font-family: 'Nanum Myeongjo', sans-serif, italic;
+ font-size: 100% ;
+ font-weight: 300;
+ text-align: center;
+ color: rgb(230, 218, 64, 0.877);
+}
+
+h6{
+ font-family: 'Nanum Myeongjo', sans-serif, italic;
+ font-size: 90% ;
+ font-weight: 300;
+ text-align: center;
+ color: rgb(230, 218, 64, 0.877);
+ margin-top: 10px;
+ margin-bottom: 5px;
+}
+
+#arrow {
+ display: contents;
+ font-size: 40px;
+ text-align: center;
+ cursor: pointer;
+ padding: 10px;
+ margin-top: 5px;
+ color: rgba(230, 218, 64, 0.877);
+}
+
+#animation {
+  animation: blink 1s steps(5, start) infinite;
+transition: 3ms;
+}
+
+@keyframes blink{
+ to{ 
+  visibility: hidden;
+  
+ }
+}
+
+#animation{
+ transition: 300ms;
+}
+
+.rotate{
+ transform: rotate(180deg);
+ transition: 300ms;
+}
+
+.active{
+ display: block !important;
+}
+
+#about p{
+ max-width: 600px; 
+ padding: 5px;
+ font-family: 'Nanum Myeongjo', sans-serif, italic;
+ font-size: 100% ;
+ font-weight: 400;
+ text-align: justify;
+ color: rgb(230, 218, 64, 0.877);
+ background-color: rgba(245, 245, 245, 0.068);
+ border-radius: 5px;
+ margin: 0 auto;
+}
+
+#deixeContato p {
+ max-width: 600px; 
+ padding: 5px;
+ font-family: 'Nanum Myeongjo', sans-serif, italic;
+ font-size: 100% ;
+ font-weight: 300;
+ text-align: center;
+ color: rgba(230, 218, 64, 0.877);
+ margin: 0 auto;
+}
+
+.form {
+ width: 40%;
+ margin: 0 auto;
+ padding: 20px;
+ 
+}
+
+.inputEmail{
+ width: 40%;
+ padding: 5px 10px;
+ border-radius: 5px 0px 0px 5px;
+ margin: 0 auto;
+ background: #ccc;
+ border: none;
+ border-style: none;
+ color: black;
+} 
+
+button{
+ width: 15%;
+ padding: 5px 10px;
+ border-radius: 0px 5px 5px 0px;
+ background-color: rgba(230, 218, 64, 0.877);
+ margin:0 auto;
+ margin-left: -5px;
+ color: grey;
+ font-weight: 600;
+ border: none;
+ cursor: pointer
+}
+
+form button:hover{
+ color:black;
+ background-color: rgba(124, 117, 12, 0.877);
+}
+@media only screen and (max-width: 480px ) {
+ .form{ 
+  width: 100%;
+ }
+}
+
+@media only screen and (max-width: 480px ) {
+ h1 {
+  font-size: 60px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2%;
+ }
+ h5{
+  font-size: 15px;
+ }
+ #about p {
+  max-width: 80%;
+ }
+}

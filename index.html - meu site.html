@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="style.css">
+
+<!-- link de fontes -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Nanum+Myeongjo:wght@400;700;800&family=Slabo+27px&family=Source+Sans+Pro:ital,wght@0,200;0,400;1,200;1,400&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,900&family=Updock&display=swap" rel="stylesheet">
+    <title> Beatriz Callado </title>
+</head>
+<body>
+    <header>
+        <!-- <div id="logo">
+            <img src="" alt="minha logo">
+        </div> -->
+        <ul>
+            <li> 
+                <a target="_blank"  href="https://github.com/be-callado"> GitHub </a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:be.callado@gmail.com"> Email </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/21993487255"> Whatsapp </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/bcparrilha/"> LinkedIn </a>
+            </li>
+            <!-- <li> <a target="_blank" href=" "> </a> Currículo </a></li> -->
+        </ul>
+      </header>
+      
+    <main>
+        <section class ="container">
+          <div class = "name">
+              <h1> Beatriz Callado </h1>
+              <h5> Front-End WEB Developer</h5>
+              <h6>SOBRE MIM</h6>
+        </div>
+
+        <div onclick="displayAbout()" id="arrow" >
+            <i id = "animation" class="fa-solid fa-circle-arrow-down"></i>
+        </div>
+        <div style= "display:none"  id="about"> <p> Formada em Gastronomia pela Universidade Estácio de Sá com Alain Ducasse Education no ano de 2018. Atualmente migrando para a área de programação, estou nessa jornada de aprendizado através dos cursos da Alura e Projeto Hiring Coders #3, além de imersões e desafios propostos de forma livre na internet. </p>
+           <p> Busco crescer e aprender na área com colegas e empresas dispostas a dar oportunidade para quem está começando, procuro novas experiências. Tenho facilidade com trabalho em grupo, experiência em comunicação com clientes, inglês avançado e vontade de aprender cada vez mais.</p> </div>
+        <div class="form">
+            <div id="deixeContato">
+                <p > Deixe Seu Contato! </p>
+            </div>
+            <form action="">
+                <input class="inputEmail" type="text" placeholder=" Email">
+                <button> Enviar </button>
+            </form>
+        </div>
+      </section>
+    </main>
+    <script> function displayAbout() {
+        var arrow = document.getElementById('animation');
+        arrow.classList.toggle('rotate')
+        var display = document.getElementById('about');
+        display.classList.toggle('active');
+    }
+        </script>
+</body>
+</html>
